@@ -4,7 +4,9 @@ const inputLength = Number(inputRef.dataset.length);
 inputRef.addEventListener('blur', onInputBlur);
 
 function onInputBlur() {
-    if (inputRef.value.length === inputLength) {
+    const enteredValue = inputRef.value.trim();
+  const valueLength = enteredValue.length;
+    if (valueLength === inputLength) {
        inputRef.classList.remove('invalid'); 
        inputRef.classList.add('valid');
         

@@ -6,3 +6,4 @@ function onInputResize () {
     const fontSizeValue = inputRef.value;
   textRef.style.fontSize = `${fontSizeValue}px`;
 }
+onInputResize()
